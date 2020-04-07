@@ -1,0 +1,81 @@
+// main: ../style.less
+
+.timeline {
+	display: flex;
+	margin: 65px auto;
+	width: 100%;
+	max-width: 768px;
+	position: relative;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 100%;
+
+		background-color: @color1;
+
+		position: absolute;
+		top: 0;
+		left: 50%;
+		z-index: 1;
+	}
+}
+
+.timeline__col {
+	width: 50%;
+}
+
+.timeline__title {
+	margin-bottom: 38px;
+
+	font-size: 18px;
+	font-weight: 700;
+	color: @color1;
+	text-transform: uppercase;
+}
+
+.timeline__date {
+	display: block;
+	margin-bottom: 12px;
+
+	font-size: 14px;
+	color: @color1;
+	text-decoration: underline;
+}
+
+.timeline__subtitle {
+	margin-bottom: 4px;
+
+	font-size: 16px;
+	font-weight: 700;
+	color: @color1;
+}
+
+.timeline__prof {
+	margin-bottom: 10px;
+
+	font-size: 14px;
+	color: @color1;
+	font-style: italic;
+}
+
+.timeline__text {
+	margin-bottom: 38px;
+
+	font-size: 12px;
+	color: @color1;
+	font-weight: 300;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.timeline__city {
+	margin-bottom: 36px;
+	
+	font-size: 14px;
+	color: @color1;
+	text-transform: uppercase;
+}

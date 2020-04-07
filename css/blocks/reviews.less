@@ -1,0 +1,66 @@
+// main: ../style.less
+
+.reviews {
+	position: relative;
+	padding: 68px 0;
+
+	background: #332F30 url(../../img/reviews-bg.png) center no-repeat;
+}
+
+.reviews__item {
+	width: 100%;
+	max-width: 830px;
+	margin: 0 auto;
+}
+
+.reviews__text {
+	font-size: 14px;
+	line-height: 2.3;
+	color: @color3;
+}
+
+.reviews__author {
+	text-align: center;
+
+	position: absolute;
+	top: 82%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.reviews__photo {
+	display: block;
+	margin: 0 auto 10px;
+
+	width: 103px;
+	height: 103px;
+	border: 4px solid #EFEFEF;
+	border-radius: 50%;
+}
+
+.reviews__name {
+	margin-bottom: 3px;
+
+	font-size: 16px;
+	color: @color1;
+	font-weight: 700;
+}
+
+.reviews__company {
+	margin-bottom: 4px;
+	
+	font-size: 14px;
+	color: @color2;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.reviews__star {
+	width: 13px;
+	height: 13px;
+
+	&--unactive {
+		opacity: 0.5;
+	}
+}

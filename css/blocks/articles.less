@@ -1,0 +1,97 @@
+// main: ../style.less
+
+.articles {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -30px;
+}
+
+.articles__col {
+	width: 33.33333%;
+	padding: 0 30px;
+}
+
+.articles__item {
+	margin-bottom: 30px;
+}
+
+.articles__header {
+	margin-bottom: 20px;
+
+	position: relative;
+}
+
+.articles__date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 77px;
+	height: 77px;
+
+	background-color: @color1;
+
+	font-size: 16px;
+	color: @color3;
+	text-align: center;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.articles__photo {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.articles__content {
+	margin-bottom: 30px;
+}
+
+.articles__title {
+	margin-bottom: 7px;
+
+	font-size: 18px;
+	color: @color1;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.articles__category {
+	margin-bottom: 23px;
+
+	font-size: 12px;
+	color: @color1;
+	text-transform: uppercase;
+}
+
+.articles__text {
+	font-size: 12px;
+	line-height: 2;
+	color: @color2;
+	font-weight: 300;
+}
+
+.news__footer {
+	text-align: right;
+}
+
+.news__link {
+	font-size: 14px;
+	color: @color2;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
